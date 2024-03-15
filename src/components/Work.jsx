@@ -15,6 +15,7 @@ const Container = styled.div`
   height: 100vh;
   gap: 10px;
   margin: 0 auto;
+  overflow: auto; /* Add overflow property to handle overflow behavior */
 `;
 
 const Title = styled.div`
@@ -67,9 +68,8 @@ const Work = () => {
                 <Logo></Logo>
                 <Subtitle>Director of Community @ Carleton Computer Science Society</Subtitle>
                 <Description>
-                  <ListItem>a</ListItem>
-                  <ListItem>b</ListItem>
-                  <ListItem>c</ListItem>
+                  <ListItem>⭐️ Organize and lead social events for 2500+ undergraduate students to connect them to the computer science community</ListItem>
+                  <ListItem>⭐️ Presented in front of 200+ freshmen to promote the CCSS agenda, increasing event turnout and developing a sense of community among students</ListItem>
                 </Description>
               </Block>
 
@@ -77,9 +77,8 @@ const Work = () => {
                 <Logo></Logo>
                 <Subtitle>External Marketer @ Asian Canadians Association Carleton</Subtitle>
                 <Description>
-                  <ListItem>a</ListItem>
-                  <ListItem>b</ListItem>
-                  <ListItem>c</ListItem>
+                  <ListItem>⭐️Coordinate promotional reels to promote sponsors, enhancing both the club and sponsor's online visibility</ListItem>
+                  <ListItem>⭐️Maintain contact with 15+ sponsors and local businesses to secure additional resources</ListItem>
                 </Description>
               </Block>
             </Contents>

@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Tech from "./Tech";
+
 const Section = styled.div`
   height: 100vh;
   background-color: #FFF9F0;
@@ -18,10 +20,17 @@ const Container = styled.div`
 `;
 
 const Title = styled.div`
-font-size: 54px;
-font-family: 'Poppins', sans-serif;
-color: #081F5C;
+  font-size: 54px;
+  font-family: 'Poppins', sans-serif;
+  color: #081F5C;
 `;
+
+const Subtitle = styled.div`
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  color: #081F5C;
+  padding-top: 30px;
+`
 
 const BioCard = styled.div`
   display: flex;
@@ -45,7 +54,7 @@ const Bio = styled.div`
 
 const About = () => {
     return (
-        <Section>
+        <Section id="about">
           <Container>
             <Title>About me</Title>
             <BioCard>
@@ -53,10 +62,11 @@ const About = () => {
               <Bio>
                 Hello, World! My name is Kelly Huang, a computer science student at Carleton University. 
                 <br/>
-                I'm goal-oriented and passionate about using tehnology and creativity to create products that leave a positive impact on the world.
+                I'm goal-oriented and passionate about using technology and creativity to create products that leave a positive impact on the world.
               </Bio>
             </BioCard>
-
+            <Subtitle>Languages & Tools</Subtitle>
+            <Tech />
           </Container>
         </Section>
     )

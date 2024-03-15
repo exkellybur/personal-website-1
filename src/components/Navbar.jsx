@@ -1,15 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'; 
+
 
 const Section = styled.div`
     display: flex;
     justify-content: center;
+    background-color: #FFF9F0;
+
   
 `;
 
 const Container = styled.div`
-    width: 1400px;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,9 +53,15 @@ const Navbar = () => {
                 <Logo src="./img/memoji.png"/>
                 <List>
                     <ListItem>Home</ListItem>
-                    <ListItem>About</ListItem>
-                    <ListItem>Works</ListItem>
-                    <ListItem>Contact</ListItem>
+                    <ListItem>
+                            <a>About</a>
+                    </ListItem>
+                    <ListItem>
+                        <ScrollLink to="works" smooth={true} duration={500}>Works</ScrollLink>
+                    </ListItem>
+                    <ListItem>
+                        <ScrollLink to="contact" smooth={true} duration={500}>Contact</ScrollLink>
+                    </ListItem>
                 </List>
                 </Links>
                 <Icons></Icons>

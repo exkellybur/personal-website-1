@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Navbar from './Navbar';
-import Duck from './Duck';
 import {useTypewriter,Cursor} from 'react-simple-typewriter';
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
@@ -22,6 +21,7 @@ const Container = styled.div`
     display: flex;
     justify-content: center; 
     margin: 0 auto;
+
 `;
 
 const LeftCard = styled.div`
@@ -90,7 +90,7 @@ const Hero = () => {
 
     return (
         <Section>
-            <Navbar/>
+            {/* <Navbar/> */}
             <Container>
                 <LeftCard>
                     <Intro>Hi, my name is</Intro>
